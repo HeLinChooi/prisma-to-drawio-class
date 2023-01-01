@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-dbml-generator"
+  output = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// * Account group
+model ProfessionalTutor {
+  id       Int    @id @default(autoincrement())
+  name     String
+  jobTitle String @map("job_title")
+  photoUri String @map("photo_uri")
+
+  @@map("professional_tutor")
+}
