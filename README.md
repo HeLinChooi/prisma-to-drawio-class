@@ -1,3 +1,5 @@
+> **Warning:** Some dependencies were upgraded to new major versions to fix security vulnerabilities. The app might not work as it did before. These changes only patch the vulnerabilities. The app has not been fully tested after them.
+
 # prisma-to-drawio-class
 This project helps to convert Prisma schema file to Draw.io Class Diagram.
 
